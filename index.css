@@ -1,0 +1,230 @@
+html, body{
+    height:100%;
+}
+body{
+    
+
+    font-family: 'Oswald', sans-serif;
+
+
+    margin:0;
+}
+
+#menu{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:100%;;
+    width:17%;
+}
+.item {
+    height: 13%;
+    background: #0009;
+    border-radius: 35px;
+    width: 15vw;
+    margin: 0 auto;
+    box-shadow: 0px 1px 9px #4cd137;
+    text-align: center;
+    color: #4cd137;
+    font-size: 1em;
+    display:flex;   
+    justify-content: center;
+    flex-direction: column;
+}
+#greetHolder {
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./assets/images/testbackground.jpeg) no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: top;
+}
+.buttonMenu {
+    display: inline-flex;
+
+    justify-content: space-evenly;
+    width: 80%;
+    height: 20%;
+    margin-top: 39px;
+}
+.box{
+    width:20%;
+}
+.socialButton {
+    max-height:135px;   
+    max-width:135px;
+    height: 100%;
+    background: #f0f0f0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 6px #f0f0f0, 0px 2px 7px #000;
+
+}
+.center {
+
+    height: 74%;
+    width: 74%;
+    border-radius: 100%;
+    background: #f0f0f0;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #d7d2d2;
+    box-shadow: 0px 3px 7px #b5b1b1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.deadCenter {
+
+    height: 65%;
+
+    width: 65%;
+    
+    border-radius: 100%;
+    
+    background: #e8e7e7;
+    
+    position: relative;
+    
+    margin: 0 auto;
+    
+    display: flex;
+    
+    justify-content: CENTER;
+    
+    flex-direction: column;
+    
+    color: #4a4a4a;
+    
+    font-size: 1rem;
+
+}
+.center:hover{
+    cursor:pointer;
+}
+.center:active{
+    box-shadow: 0px 0px 2px #f0f0f0;
+}
+.item:hover{
+    cursor:pointer;
+    width:15.5vw;
+}
+.container{
+    display:flex;
+    width:100%;
+    height:25%;
+    background:#dcdde1;
+}
+.accentText{
+    color:#f39c12;
+    font-size: 3.5vw;
+}
+.subGreet{
+    font-size:1.75vw;
+    margin-top:0;
+    padding:none;
+}
+#navBar{
+    width:100%;
+    display:flex;
+    height:5%;
+}
+.greet {
+    font-size: 8vw;
+    font-weight:100;
+    border-radius: 35px;
+    width: 78%;
+    background-size: cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+.underGreet {
+    font-weight: 200;
+    border-radius: 23px;
+    background: #ff2e63;
+    padding: 2.5%;
+    box-shadow: 1px 4px 18px #b9b9b9;
+    font-size: 1.5vw;
+}
+
+/* Desktop Portrait*/
+@media screen and (orientation:portrait) { 
+    .buttonMenu{
+        flex-direction: column;
+        height:100%;
+        width:100%;
+    }
+    .socialButton{
+        margin: 0 auto;
+    }
+
+}
+/* Desktop Landscape*/
+@media screen and (orientation:landscape) {
+    .buttonMenu{
+        flex-direction: row;
+    }
+
+}
+
+/* Any Mobile*/
+@media screen and (max-device-width: 740px){
+    .buttonMenu{
+        margin-top: 0;
+        height:100%;
+        width:100%;
+    }
+    .socialButton{
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .deadCenter{
+        font-size:.9em;
+    }
+}
+
+
+/*  Mobile Landscape */
+@media screen and (max-device-width: 740px) and (orientation: landscape){
+    .buttonMenu{
+        flex-direction: row;
+    }
+    .greet{
+        margin:0;
+    }
+    .subGreet{
+        margin: 4% 0;
+    }
+  }
+
+  /* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .buttonMenu{
+        flex-direction: column;
+    }
+    .socialButton{
+        margin: 0 auto;
+    }
+    .subGreet{
+        display:none;
+    }
+    .accentText{
+        font-size:1em;
+    }
+  }
