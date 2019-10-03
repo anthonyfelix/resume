@@ -177,6 +177,7 @@ body{
 }
 /* Desktop Landscape*/
 @media screen and (orientation:landscape) {
+    
     .buttonMenu{
         flex-direction: row;
     }
@@ -185,11 +186,13 @@ body{
 
 /* Any Mobile*/
 @media screen and (max-device-width: 740px){
+
     .buttonMenu{
         margin-top: 0;
         height:100%;
         width:100%;
     }
+
     .deadCenter{
         font-size:.9em;
     }
