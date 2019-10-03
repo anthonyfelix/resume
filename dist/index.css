@@ -232,4 +232,7 @@ body{
     .accentText{
         font-size:1em;
     }
+    .deadCenter{
+        font-size:2em;
+    }
   }
