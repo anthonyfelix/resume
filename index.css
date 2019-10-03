@@ -177,7 +177,7 @@ body{
 }
 /* Desktop Landscape*/
 @media screen and (orientation:landscape) {
-    
+
     .buttonMenu{
         flex-direction: row;
     }
@@ -203,6 +203,8 @@ body{
 @media screen and (max-device-width: 900px) and (orientation: landscape){
     .buttonMenu{
         flex-direction: row;
+        height:100%;
+        margin: 0;
     }
     .greet{
         margin:0;
@@ -219,7 +221,7 @@ body{
     }
     .socialButton{
         margin: 0 auto;
-        height: 15%;
+        height: 30%;
         max-height: 300px;
         width: 30%;
         max-width: 300px;
