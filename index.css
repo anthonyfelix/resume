@@ -190,10 +190,6 @@ body{
         height:100%;
         width:100%;
     }
-    .socialButton{
-        max-height: 100px;
-        max-width: 100px;
-    }
     .deadCenter{
         font-size:.9em;
     }
