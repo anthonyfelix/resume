@@ -220,6 +220,10 @@ body{
     }
     .socialButton{
         margin: 0 auto;
+        height: 15%;
+        max-height: 300px;
+        width: 30%;
+        max-width: 300px;
     }
     .subGreet{
         display:none;
