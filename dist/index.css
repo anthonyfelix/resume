@@ -1,12 +1,11 @@
 html, body{
     height:100%;
 }
+a{
+    text-decoration: none;
+}
 body{
-    
-
     font-family: 'Oswald', sans-serif;
-
-
     margin:0;
 }
 
@@ -59,7 +58,7 @@ body{
 .box{
     width:20%;
 }
-.socialButton {
+.btn {
     max-height:135px;   
     max-width:135px;
     height: 100%;
@@ -157,7 +156,6 @@ body{
 .underGreet {
     font-weight: 200;
     border-radius: 23px;
-    background: #ff2e63;
     padding: 2.5%;
     box-shadow: 1px 4px 18px #b9b9b9;
     font-size: 1.5vw;
@@ -170,7 +168,7 @@ body{
         height:100%;
         width:100%;
     }
-    .socialButton{
+    .btn{
         margin: 0 auto;
     }
 
@@ -219,7 +217,7 @@ body{
     .buttonMenu{
         flex-direction: column;
     }
-    .socialButton{
+    .btn{
         margin: 0 auto;
         height: 30%;
         max-height: 300px;
