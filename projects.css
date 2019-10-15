@@ -14,6 +14,10 @@ html,body{
     padding:5%;
     font-size:.86em;
 }
+.previewBox ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
 .title{
     color:white;
     background:#f27e35;
