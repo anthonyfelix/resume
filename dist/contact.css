@@ -58,7 +58,7 @@ a:hover{
     height:1000px;
 }
 @media screen and (max-width: 850px) {
-    .tri{
+    .geo{
         display:none;
     }
 }
