@@ -61,4 +61,7 @@ a:hover{
     .geo{
         display:none;
     }
+    .contact-info{
+        font-size: 2em;
+    }
 }
