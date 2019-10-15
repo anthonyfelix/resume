@@ -6,7 +6,7 @@ html,body{
     width:100%;
     text-align: center;
     font-size: 3em;
-    color:coral;
+    color:#484848;
 }
 .container{
     display:flex;
@@ -14,8 +14,62 @@ html,body{
     width:100%;
 }
 .paper{
-    padding:5%;
-    width:80%;
-    box-shadow: 0 10px 24px #eaeaea;
+    padding: 5%;
+
+    width: 80%;
+
+    box-shadow: 0 10px 24px #ccc;
+
     border-radius: 20px;
+
+    font-size: 1.3em;
+}
+.segments{
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;
+    margin-top: 5%;
+    padding:2%;
+}
+.segment{
+    width:40%;
+    text-align: center;
+    border-radius: 10px;
+    height:15em;
+    box-shadow: 0 10px 24px #eaeaea;
+    color:white;
+}
+li{
+    text-align: left;
+}
+.segment:first-of-type{
+    background:coral;
+}
+.segment:nth-of-type(2n){
+    background:#7ed6df;
+}
+.seg-head{
+    margin:0;
+    font-size: 2em;
+}
+.geo{
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid cadetblue;
+    position: absolute;
+    
+}
+
+@media screen and (max-width: 645px) {
+    .segments{
+        flex-flow: column;
+        justify-content: center;
+    }
+    .segment{
+        width:80%;
+        display: block;
+        margin: 5% auto 0 auto;
+    }
 }

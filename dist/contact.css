@@ -1,0 +1,64 @@
+html,body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+#headline{
+    width:100%;
+    text-align: center;
+    font-size: 3em;
+    color:coral;
+}
+.contact-info{
+    font-size: 5em;
+    color:#393939;
+}
+a{
+    color:#7ed6df;
+}
+a:hover{
+    color:#65abb3;
+}
+.geo{
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid cadetblue;
+    position: absolute;
+    
+}
+#top{
+    top: -144px;
+
+    left: -550px;
+
+    border-bottom: 500px solid cadetblue;
+
+    z-index: -1;
+
+    transform: rotate(17deg);
+}
+#bottom{
+    bottom: -75px;
+
+    right: -400px;
+
+    z-index: -1;
+
+    transform: rotate(135deg);
+
+    border-bottom: 440px solid tomato;
+
+    border-radius: 79%;
+}
+.triangles{
+    width:1000px;
+    height:1000px;
+}
+@media screen and (max-width: 850px) {
+    .tri{
+        display:none;
+    }
+}
